@@ -27,6 +27,8 @@ module.exports = {
     "<rootDir>/public/",
     "<rootDir>/jest\\.config\\.js",
     "<rootDir>/svelte\\.config\\.js",
+    "<rootDir>/rollup\\.config\\.js",
+    "<rootDir>/src/main\\.ts",
     "<rootDir>/coverage/",
     "<rootDir>/tsconfig\\.json/",
   ],

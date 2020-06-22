@@ -1,9 +1,11 @@
+/* eslint-disable  @typescript-eslint/no-var-requires*/
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import typescript from "@rollup/plugin-typescript";
+import scssPlugin from "rollup-plugin-scss";
 
 const production = !process.env.ROLLUP_WATCH;
 const mode = process.env.NODE_ENV;
@@ -48,6 +50,11 @@ export default {
     }),
     commonjs(),
     typescriptPlugin,
+    scssPlugin({
+      sass: require("sass"),
+      failOnError: true,
+      output: "output.css",
+    }),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
