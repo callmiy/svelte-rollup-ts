@@ -1,5 +1,7 @@
+export let name: string;
+
 export const data: Data = {
-  count: 1
+  count: 1,
 };
 
 interface Data {
