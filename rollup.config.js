@@ -53,7 +53,7 @@ export default {
     scssPlugin({
       sass: require("sass"),
       failOnError: true,
-      output: "output.css",
+      output: "public/build/output.css",
     }),
 
     // In dev mode, call `npm run start` once
