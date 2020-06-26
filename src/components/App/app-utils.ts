@@ -1,5 +1,3 @@
-export let name: string;
-
 export const data: Data = {
   count: 1,
 };
